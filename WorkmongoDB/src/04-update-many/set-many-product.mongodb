@@ -1,0 +1,21 @@
+
+use("pet_store")
+db.products.updateMany(
+  // query
+  {category: "Primate"},
+  // update - operators combinados para actualizar múltiples campos
+  {
+    $set: {
+      Alimetacion: "carnivoro"}}
+)
+
+db.products.updateMany(
+  // query
+  {name: "pulpo"},
+  // update - operators combinados para actualizar múltiples campos
+  {
+    $set: {
+      Alimetacion: "carnivoro"}}
+)
+
+ 
